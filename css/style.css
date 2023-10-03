@@ -1,0 +1,44 @@
+.minesweeper-grid8 {
+  display: grid;
+  grid-template-columns: repeat(8, 40px);
+  gap: 2px;
+  margin: 100px auto 0;
+  width: 330px;
+}
+
+.minesweeper-grid16 {
+  margin: 0 auto;
+  width: 670px;
+  display: grid;
+  grid-template-columns: repeat(16, 40px);
+  gap: 2px;
+}
+
+#minescount, #flagcounts{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.revealed {
+  background-color: #ddd;
+}
+
+.flagged {
+  background: url('../images/flag.svg');
+  cursor: pointer;
+}
+
+.mined {
+  background: url('../images/mine.png');
+  cursor: pointer;
+}
